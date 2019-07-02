@@ -142,7 +142,7 @@ class ConsoleOption
      * @param bool $noValue
      * @return $this
      */
-    public function setNoValue($noValue): self
+    public function setNoValue($noValue = true): self
     {
         $this->setCastTo('bool');
         $this->noValue = (bool) $noValue;
