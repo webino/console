@@ -22,12 +22,17 @@ $option = (new ConsoleOption('example'))
     ->setDefaultValue('default')
     ->setRequired();
 
-Assert::same([
-    'prefix' => '-e',
-    'longPrefix' => '--example',
-    'description' => 'Example console option.',
-    'required' => true,
-    'noValue' => false,
-    'castTo' => 'string',
-    'defaultValue' => ['default'],
-], $option->toArray());
+
+$expected = [
+    'example' => [
+        'prefix' => '-e',
+        'longPrefix' => '--example',
+        'description' => 'Example console option.',
+        'required' => true,
+        'noValue' => false,
+        'castTo' => 'string',
+        'defaultValue' => ['default'],
+    ]
+];
+
+Assert::same($expected, $option->toArray());

@@ -192,13 +192,15 @@ class ConsoleOption
     public function toArray(): array
     {
         return [
-            'prefix' => $this->prefix,
-            'longPrefix' => $this->longPrefix,
-            'description' => $this->description,
-            'required' => $this->required,
-            'noValue' => $this->noValue,
-            'castTo' => $this->castTo,
-            'defaultValue' => $this->defaultValue,
+            $this->name => [
+                'prefix' => $this->prefix,
+                'longPrefix' => $this->longPrefix,
+                'description' => $this->description,
+                'required' => $this->required,
+                'noValue' => $this->noValue,
+                'castTo' => $this->castTo,
+                'defaultValue' => $this->defaultValue,
+            ],
         ];
     }
 }
