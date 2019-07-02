@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0ca48ed0f95b5df74ac9dfcf38bfeb3",
+    "content-hash": "3acd9c49f6c286f3fd587bd37c999c51",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -837,6 +837,50 @@
                 "dump"
             ],
             "time": "2019-06-17T17:37:00+00:00"
+        },
+        {
+            "name": "webino/exceptions",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webino/exceptions.git",
+                "reference": "567d8d0f3c96c71f088b9e79a1756c9e515b0bb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webino/exceptions/zipball/567d8d0f3c96c71f088b9e79a1756c9e515b0bb9",
+                "reference": "567d8d0f3c96c71f088b9e79a1756c9e515b0bb9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1"
+            },
+            "require-dev": {
+                "nette/tester": "1.*",
+                "phpstan/phpstan": "0.*",
+                "squizlabs/php_codesniffer": "3.*",
+                "tracy/tracy": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webino\\": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Bacinsky",
+                    "email": "peter@bacinsky.sk"
+                }
+            ],
+            "description": "Slightly better PHP exceptions.",
+            "time": "2019-03-21T16:37:06+00:00"
         }
     ],
     "packages-dev": [
@@ -1835,7 +1879,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "webino/exceptions": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
