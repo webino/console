@@ -11,7 +11,8 @@
   ],
   "require": {
     "php": "~7.1",
-    "league/climate": "3.*"
+    "league/climate": "3.*",
+    "psy/psysh": "0.*"
   },
   "require-dev": {
     "phpstan/phpstan": "0.*",
