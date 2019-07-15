@@ -31,11 +31,11 @@ class Console extends CLImate implements ConsoleInterface
     }
 
     /**
-     * Returns console arguments.
+     * Returns console options.
      *
      * @return array
      */
-    public function getArguments(): array
+    public function getOptions(): array
     {
         return $this->arguments->all();
     }

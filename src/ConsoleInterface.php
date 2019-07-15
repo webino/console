@@ -103,9 +103,9 @@ interface ConsoleInterface
     public function addOption(ConsoleOption $option): void;
 
     /**
-     * Returns console arguments.
+     * Returns console options.
      *
      * @return array
      */
-    public function getArguments(): array;
+    public function getOptions(): array;
 }
