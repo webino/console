@@ -20,5 +20,23 @@ use League\CLImate\CLImate;
  */
 class Console extends CLImate implements ConsoleInterface
 {
+    /**
+     * Add console option.
+     *
+     * @param ConsoleOption $option
+     */
+    public function addOption(ConsoleOption $option): void
+    {
+        $this->arguments->add($option->toArray());
+    }
 
+    /**
+     * Returns console arguments.
+     *
+     * @return array
+     */
+    public function getArguments(): array
+    {
+        return $this->arguments->all();
+    }
 }
